@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción - Expo Joven Full Stack</title>
+</head>
+<body>
+    <header>
+        <nav class="Barra">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="inscripcion.html">Inscripción</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Inscripción al Evento</h1>
+
+        <section>
+            <h2>Asegurá tu lugar en la Expo</h2>
+            <p>Completá el siguiente formulario para inscribirte como asistente o expositor.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div>
+                        <label for="nombre">Nombre completo:</label><br>
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Nika" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefono">Teléfono (opcional):</label><br>
+                        <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="099 123 456">
+                    </div>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Detalles de Participación</legend>
+                    <div>
+                        <label for="rol">¿Cómo vas a participar?</label><br>
+                        <select id="rol" name="rol" class="form-select" required>
+                            <option value="">Seleccioná una opción...</option>
+                            <option value="asistente">Asistente general</option>
+                            <option value="expositor">Expositor de proyecto</option>
+                            <option value="staff">Staff / Organización</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>¿Qué día vas a asistir?</label><br>
+                        <input type="radio" id="dia1" name="dia" value="viernes" required>
+                        <label for="dia1">Viernes (Apertura)</label><br>
+                        <input type="radio" id="dia2" name="dia" value="sabado">
+                        <label for="dia2">Sábado (Cierre y Premiación)</label>
+                    </div>
+                </fieldset>
+                <br>
+                <input type="submit" class="btn" value="Completar Inscripción">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Expo Joven Full Stack 2026 - Instituto Tecnológico</p>
+    </footer>
+</body>
+</html>
